@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91E750D9-87E9-49E9-A6A7-768ED2F10CC2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Bright</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>08582034-BDC1-40F9-956E-FA4F33B163D1</key>
+		<string>https://github.com/Mobifusion-Inc/ios_bright.git</string>
+		<key>711FFE6F-50C8-4AD1-8CEA-F59EAB568516</key>
+		<string>https://github.com/square/SocketRocket.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Bright.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>08582034-BDC1-40F9-956E-FA4F33B163D1</key>
+		<string>../..</string>
+		<key>711FFE6F-50C8-4AD1-8CEA-F59EAB568516</key>
+		<string>../../SocketRocket</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Mobifusion-Inc/ios_bright.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>08582034-BDC1-40F9-956E-FA4F33B163D1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>08582034-BDC1-40F9-956E-FA4F33B163D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_bright</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>711FFE6F-50C8-4AD1-8CEA-F59EAB568516</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SocketRocket</string>
+		</dict>
+	</array>
+</dict>
+</plist>
