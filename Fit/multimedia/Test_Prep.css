@@ -1,0 +1,93 @@
+body {
+
+font-family:  "HelveticaNeue-light", "Helvetica", sans-serif;
+line-height:150%;
+
+
+
+
+
+}
+
+
+h3 {
+
+font-family:"HelveticaNeue-CondensedBold";
+font-size: 2.3em;
+border-top: black solid 5px;
+padding-top:10px;
+
+}
+
+.para2 {
+ border-top: grey solid 2px;
+  border-bottom: grey solid 2px;
+ color: grey;
+ text-align:left;
+ padding:0px;
+
+
+
+ padding-top: 15px;
+  padding-bottom: 15px;
+ line-height: 120%;
+ font-weight: 100;
+ margin:25px;
+ font-size:0.8em;
+
+}
+
+
+button {
+background-color:white;
+color:#00aeff;
+border: #00aeff solid 1.5px;
+
+
+
+font-weight: 100;
+text-align: center;
+height: 50px;
+font-size:1.2em;
+margin-top:10px;
+margin-bottom:10px;
+
+width:100%;
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen
+and (min-width : 700px)
+and (max-width : 10000px) {
+
+
+body {
+
+padding-left:20%;
+margin-right:5%;
+
+}
+
+
+.para2 {
+
+width: 70%;
+margin-left:auto;
+margin-right:auto;
+font-size:1em;
+font-weight:100;
+
+
+}
+
+
+}

@@ -1,0 +1,64 @@
+<script type="text/javascript">
+				window.onscroll = reportPosition;
+              var tag;
+
+function getSelectionCharOffsetsWithin(element) {
+    var start = 0, end = 0;
+    var sel, range, priorRange;
+    if (typeof window.getSelection != "undefined") {
+    
+        range = window.getSelection().getRangeAt(0);
+        stylizeHighlightedString(range);
+
+    } else if (typeof document.selection != "undefined" &&
+               (sel = document.selection).type != "Control") {
+        range = sel.createRange();
+        stylizeHighlightedString(range);
+    }
+}
+
+function uiWebview_RemoveAllHighlightsForElement(element) {
+
+                    if (element) {
+                        if (element.nodeType == 1) {
+                            if (element.getAttribute("class") == "uiWebviewHighlight") {
+                                var text = element.removeChild(element.firstChild);
+                                element.parentNode.insertBefore(text,element);
+                                element.parentNode.removeChild(element);
+                                return true;
+                            } else {
+                                var normalize = false;
+                                for (var i=element.childNodes.length-1; i>=0; i--) {
+                                    if (uiWebview_RemoveAllHighlightsForElement(element.childNodes[i])) {
+                                        normalize = true;
+                                    }
+                                }
+                                if (normalize) {
+                                    element.normalize();
+                                }
+                            }
+                        }
+                    }
+                    return false;
+                }
+                function uiWebview_RemoveAllHighlights() {
+                    selectedText = "";
+                    uiWebview_RemoveAllHighlightsForElement(document.body);
+}
+
+function stylizeHighlightedString(range) {
+    
+    //var range               = window.getSelection().getRangeAt(0);
+    var selectionContents   = range.extractContents();
+    var span                = document.createElement("span");
+    
+    span.appendChild(selectionContents);
+    
+    span.setAttribute("class","uiWebviewHighlight");
+    span.style.backgroundColor  = "rgb(237,191,245)";
+    span.style.color            = "black";
+    
+    range.insertNode(span);
+}
+
+</script>
